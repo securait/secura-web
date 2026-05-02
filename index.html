@@ -2,7 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Secura IT</title>
+  <p style="color:#00c2ff; font-weight:600;" data-aos="fade-down">
+    Secura IT · Ciberseguridad para instituciones
+  </p>
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -67,16 +69,35 @@
 
     .hero {
       text-align: center;
+      padding: 120px 0;
+      background: 
+        linear-gradient(rgba(2,6,23,0.85), rgba(2,6,23,0.95)),
+        url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b');
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .hero h1 {
+      margin-bottom: 20px;
     }
 
+    .hero p {
+      margin-bottom: 30px;
+      color: #94a3b8;
+    }
     .btn {
-      display: inline-block;
-      padding: 12px 25px;
-      background: #00c2ff;
-      color: #000;
-      text-decoration: none;
-      border-radius: 5px;
-      margin: 10px;
+      padding: 14px 28px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #00c2ff, #7c3aed);
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 194, 255, 0.4);
     }
 
     .services {
