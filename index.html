@@ -3,15 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <title>Secura IT</title>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0b0f1a;
-      color: #fff;
-    }
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: #e2e8f0;
+  }
+
+  h1 {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #00c2ff, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h2 {
+    color: #00c2ff;
+  }
+
+  .card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 25px;
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 194, 255, 0.3);
+  }
+
+  .btn {
+    background: linear-gradient(90deg, #00c2ff, #7c3aed);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00c2ff;
+  }
 
     .container {
       width: 90%;
@@ -74,16 +112,16 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <h1>Seguridad y control total sobre tu infraestructura crítica</h1>
-      <p>Protege accesos privilegiados, detecta amenazas y cumple auditorías sin estrés.</p>
-      <a href="#" class="btn">Solicitar diagnóstico</a>
+      <h1 data-aos="fade-up">Seguridad y control total sobre tu infraestructura crítica</h1>
+      <p data-aos="fade-up" data-aos-delay="200">Protege accesos privilegiados, detecta amenazas y cumple auditorías sin estrés.</p>
+      <a href="#" class="btn" data-aos="fade-up" data-aos-delay="400">Solicitar diagnóstico</a>
       <a href="#" class="btn">Ver demo PAM</a>
     </div>
   </section>
 
   <!-- SERVICIOS -->
   <section>
-    <div class="container">
+    <div class="card" data-aos="zoom-in">
       <h2>Servicios</h2>
       <div class="services">
         <div class="card">
@@ -104,7 +142,7 @@
 
   <!-- BENEFICIOS -->
   <section>
-    <div class="container">
+    <div data-aos="fade-right">✔ Reducción de riesgos</div>
       <h2>Beneficios</h2>
       <div class="benefits">
         <div>✔ Reducción de riesgos</div>
@@ -135,6 +173,15 @@
   <footer>
     <p>© Secura IT</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
 
 </body>
 </html>
