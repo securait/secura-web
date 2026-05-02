@@ -1,35 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Secura IT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="services.html">Servicios</a>
-    <a href="contact.html">Contacto</a>
-</nav>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0b0f1a;
+      color: #fff;
+    }
 
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #00c2ff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 10px;
+    }
+
+    .services {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 250px;
+      background: #12182a;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #05080f;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align:center; padding-top:80px;">
-  <h1>Secura IT</h1>
 
-  <p><strong>Soluciones de Seguridad y Monitoreo Empresarial</strong></p>
+<body>
 
-  <p>Protegemos tu infraestructura antes de que ocurran los ataques.</p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Seguridad y control total sobre tu infraestructura crítica</h1>
+      <p>Protege accesos privilegiados, detecta amenazas y cumple auditorías sin estrés.</p>
+      <a href="#" class="btn">Solicitar diagnóstico</a>
+      <a href="#" class="btn">Ver demo PAM</a>
+    </div>
+  </section>
 
-  <p><strong>Servicios:</strong></p>
-  <p>WAF | SIEM | PAM | Hardening | Centro Monitoreo</p>
+  <!-- SERVICIOS -->
+  <section>
+    <div class="container">
+      <h2>Servicios</h2>
+      <div class="services">
+        <div class="card">
+          <h3>PAM</h3>
+          <p>Controla y audita accesos privilegiados sin exponer credenciales.</p>
+        </div>
+        <div class="card">
+          <h3>WAF</h3>
+          <p>Protege tus aplicaciones web contra ataques y accesos no autorizados.</p>
+        </div>
+        <div class="card">
+          <h3>SIEM</h3>
+          <p>Monitorea eventos de seguridad y detecta amenazas en tiempo real.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <br>
+  <!-- BENEFICIOS -->
+  <section>
+    <div class="container">
+      <h2>Beneficios</h2>
+      <div class="benefits">
+        <div>✔ Reducción de riesgos</div>
+        <div>✔ Cumplimiento de auditorías</div>
+        <div>✔ Visibilidad total</div>
+        <div>✔ Implementación rápida</div>
+      </div>
+    </div>
+  </section>
 
-  <p>Diagnostico de seguridad sin costo</p>
-  <p>ventas@securait.com.ec</p>
-  <p>0999856393</p>
-  <p>Cuenca - Ecuador</p>
+  <!-- PAM -->
+  <section>
+    <div class="container">
+      <h2>Gestión de Accesos Privilegiados (PAM)</h2>
+      <p>Controla quién accede, cuándo y cómo. Elimina riesgos asociados a credenciales compartidas y asegura trazabilidad total.</p>
+      <a href="#" class="btn">Ver demo</a>
+    </div>
+  </section>
 
-  <br>
+  <!-- CTA FINAL -->
+  <section>
+    <div class="container">
+      <h2>Empieza a proteger tu infraestructura hoy</h2>
+      <a href="#" class="btn">Agendar reunión</a>
+    </div>
+  </section>
 
-  <p><em>Sitio en construccion, pero la seguridad no espera.</em></p>
+  <footer>
+    <p>© Secura IT</p>
+  </footer>
+
 </body>
 </html>
